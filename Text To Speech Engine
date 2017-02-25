@@ -1,1 +1,0 @@
-Dim message, sapimessage = InputBox("Write something and I will say it for you"+vbcrlf)Set sapi= CreateObject("sapi.spvoice")sapi.Speak message
