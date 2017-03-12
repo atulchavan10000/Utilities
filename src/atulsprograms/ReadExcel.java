@@ -64,8 +64,8 @@ public class ReadExcel
 		
 		ReadExcel objExcelFile = new ReadExcel();
 				
-				String filePath = System.getProperty("user.dir")+"\\src";
-				
+				String filePath = System.getProperty("user.dir")+"//src";
+				System.out.println(filePath);
 				objExcelFile.readExcel(filePath, "ExportExcel.xlsx", "ExcelSheet");
 				
 		}
