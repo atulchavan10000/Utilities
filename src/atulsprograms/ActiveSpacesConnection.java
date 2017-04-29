@@ -52,21 +52,21 @@ public class ActiveSpacesConnection {
      browserDef - Used to specify custom timeout values and distribution or             time scopes.
      filter - A String that can be used to create a Filter, the filter can be                     called as a database query */
      browser = space.browse(BrowserDef.BrowserType.GET,                                   BrowserDef.create().setTimeScope(BrowserDef.TimeScope.SNAPSHOT)
-            .setPrefetch(BrowserDef.PREFETCH_ALL), "UniqueId"));
+            .setPrefetch((BrowserDef.PREFETCH_ALL), "UniqueId"));
      if(browser.size()!=0){ 
          tuple = browser.next();
          if(!tuple.isNull("tuple1")){
-             tuple1_value = tuple.getString("tuple1"));
+             tuple1_value = tuple.getString("tuple1");
           }
                  else
                 tuple1_value = "Null";
                        if(!tuple.isNull("tuple1")){
-                tuple2_value = tuple.getInt("tuple2"));
+                tuple2_value = tuple.getInt("tuple2");
            }
            else
                 tuple2_value = "Null"; 
                        if(!tuple.isNull("tuple3")){
-         tuple3_value = tuple.getDateTime("tuple3"));
+         tuple3_value = tuple.getDateTime("tuple3");
             }
            else
                 tuple3_value = "Null";  
